@@ -51,7 +51,7 @@ SVN选择增量式版本管理方式，Git选择文件系统快照形式
 ### 3.3 Git 结构介绍
 工作区（写代码）、暂存区（临时储存）、本地库（历史版本）
 
-![](https://cdn.nlark.com/yuque/0/2022/jpeg/29007365/1656358253703-eeef3d03-97cd-4c74-a818-a3d329bf6c85.jpeg)
+<img src="https://github.com/LearnDataEveryday/Git-Github-Implementation-Note/blob/99460ff67986f5ff20bbffa5217f2e6dcde27559/Figures/yuque_diagram.jpg" width="12%">
 
 ### 3.4 Git和代码托管中心（任务：维护远程库）
 
@@ -65,11 +65,11 @@ GitHub，码云（中国国内访问较快）
 
 ##### 1. 团队内部协作
 
-![](https://cdn.nlark.com/yuque/0/2022/jpeg/29007365/1656358812435-c1816e5b-8c2e-41db-b07c-8cd8ce00319c.jpeg)
+<img src="https://github.com/LearnDataEveryday/Git-Github-Implementation-Note/blob/99460ff67986f5ff20bbffa5217f2e6dcde27559/Figures/yuque_diagram2.jpg" width="60%">
 
 ##### 2. 跨团队协作
 
-![](https://cdn.nlark.com/yuque/0/2022/jpeg/29007365/1656359275915-10c3a268-648a-4ed6-a295-a5a7446b4a95.jpeg)
+<img src="https://github.com/LearnDataEveryday/Git-Github-Implementation-Note/blob/31060d7360c597e904b92619c9e53c738d227636/Figures/yuque_diagram3.jpg" width="65%">
 
 ## 4 Git 命令行操作
 
@@ -167,8 +167,8 @@ Windows可以进入git bash界面写linux code进行操作
 
    在版本控制过程中，使用多条线同时推进多个任务。
    
-   ![](https://cdn.nlark.com/yuque/0/2022/jpeg/29007365/1656434733175-f973c175-33d2-493e-a821-558318ecba7a.jpeg)
-
+   <img src="https://github.com/LearnDataEveryday/Git-Github-Implementation-Note/blob/31060d7360c597e904b92619c9e53c738d227636/Figures/yuque_diagram4.jpg" width="65%">
+  
 2. 分支的好处
    1. 同时并行推进多个功能，提高开发效率
    2. 各个分支在开发过程中，如果某一个分支开发失败，不会对其他分支有任何影响
@@ -200,7 +200,7 @@ Windows可以进入git bash界面写linux code进行操作
 
          🔽 Below is what ```vim good.txt``` code shows:
 
-         ```shell
+         ```
          aaaaaa
          bbbbbb
          cccccc
@@ -235,7 +235,7 @@ Windows可以进入git bash界面写linux code进行操作
          Lenovo@DESkTOP-SAV98C0 MINGW64 /d/workspaces/GitSpaceVideo/WeChat (hot_fix|MERGING)
          $ git commit - m "resolve conflict"
          [hot_fix 235081a] resolve conflict
-         ---This shows that we have successfully merged the branch in 本地库
+         //---This shows that we have successfully merged the branch in 本地库
          Lenovo@DESkTOP-SAV98C0 MINGW64 /d/workspaces/GitSpaceVideo/WeChat (hot_fix)
          $ git status
          On branch hot_fix
@@ -262,7 +262,8 @@ Windows可以进入git bash界面写linux code进行操作
 Git 底层采用的是 SHA-1 算法。
 
 根据哈希算法的特性，哈希算法可以被用来验证文件一致性，原理如下图：
-![](https://cdn.nlark.com/yuque/0/2022/jpeg/29007365/1656443626969-72ba788a-1d12-4e00-aff0-6652d1d952c7.jpeg)
+
+<img src="https://github.com/LearnDataEveryday/Git-Github-Implementation-Note/blob/31060d7360c597e904b92619c9e53c738d227636/Figures/yuque_diagram5.jpg" width="58%">
 
 ##### 2. Git 保存版本的机制
 - 集中式版本控制工具的文件管理机制
@@ -271,24 +272,24 @@ Git 底层采用的是 SHA-1 算法。
    1. Git 把数据看成是小型文件系统的一组快照。每次提交更新时，Git都会对当前的全部文件制作一个快照并保存这个快照的索引。为了高效，如果文件没有修改，Git 不再重新储存该文件，而只是保留一个链接指向之前存储的文件。
    2. 细节如下图
 
-   ![](https://cdn.nlark.com/yuque/0/2022/jpeg/29007365/1656446735271-507b2568-9605-441f-bc43-459c5259a473.jpeg)
+   <img src="https://github.com/LearnDataEveryday/Git-Github-Implementation-Note/blob/31060d7360c597e904b92619c9e53c738d227636/Figures/yuque_diagram6.jpg" width="65%">
    
-   ![](https://cdn.nlark.com/yuque/0/2022/jpeg/29007365/1656447216202-68eeaec5-53fa-46bc-b19c-2db6f5b43669.jpeg)
+   <img src="https://github.com/LearnDataEveryday/Git-Github-Implementation-Note/blob/31060d7360c597e904b92619c9e53c738d227636/Figures/yuque_diagram7.jpg" width="65%">
 
 - Git 分支管理
    1. Git 分支的操作只在于切换 HEAD 指针的位置
    2. 版本切换操作如下图
 
-   ![](https://cdn.nlark.com/yuque/0/2022/jpeg/29007365/1656523913691-19f8c6e0-0aa2-4fd1-87b7-61e7fc3b82c9.jpeg)
+   <br /><img src="https://github.com/LearnDataEveryday/Git-Github-Implementation-Note/blob/31060d7360c597e904b92619c9e53c738d227636/Figures/yuque_diagram8.jpg" width="50%">
    
-   ![](https://cdn.nlark.com/yuque/0/2022/jpeg/29007365/1656523916901-3989c1ff-ddae-4990-a87c-2c715b169b01.jpeg)
+   <img src="https://github.com/LearnDataEveryday/Git-Github-Implementation-Note/blob/31060d7360c597e904b92619c9e53c738d227636/Figures/yuque_diagram9.jpg" width="50%">
    
-   ![](https://cdn.nlark.com/yuque/0/2022/jpeg/29007365/1656447927296-24302c93-21f8-4c6e-a745-99dd426c5d66.jpeg)
+   <img src="https://github.com/LearnDataEveryday/Git-Github-Implementation-Note/blob/31060d7360c597e904b92619c9e53c738d227636/Figures/yuque_diagram10.jpg" width="69%">
    
-   ![](https://cdn.nlark.com/yuque/0/2022/jpeg/29007365/1656523921585-4c2cccd8-3507-477d-ba67-598a84234931.jpeg)
+   <img src="https://github.com/LearnDataEveryday/Git-Github-Implementation-Note/blob/31060d7360c597e904b92619c9e53c738d227636/Figures/yuque_diagram11.jpg" width="69%">
    
-   ![](https://cdn.nlark.com/yuque/0/2022/jpeg/29007365/1656524026497-4081995a-9252-4ad1-aad8-a8673a849ced.jpeg)
-
+   <img src="https://github.com/LearnDataEveryday/Git-Github-Implementation-Note/blob/31060d7360c597e904b92619c9e53c738d227636/Figures/yuque_diagram12.jpg" width="69%">
+   
 ### 4.2 Github远程库
 
 #### 4.2.1 GitHub账号
@@ -381,13 +382,13 @@ pull 是 fetch 和 merge 的结合
 
 1. github repository主页选择fork
 
-![Screen Shot 2022-06-29 at 2.32.52 PM.png](https://cdn.nlark.com/yuque/0/2022/png/29007365/1656527620352-36e5461f-cb85-4406-ab54-29bef7334d5a.png#clientId=ubd14e5f7-062f-4&crop=0&crop=0&crop=1&crop=1&from=ui&height=116&id=ue3bb685b&margin=%5Bobject%20Object%5D&name=Screen%20Shot%202022-06-29%20at%202.32.52%20PM.png&originHeight=184&originWidth=984&originalType=binary&ratio=1&rotation=0&showTitle=false&size=29069&status=done&style=none&taskId=ub33add5f-6bc1-454e-a98a-b0e849af35c&title=&width=619)
+![](https://github.com/LearnDataEveryday/Git-Github-Implementation-Note/blob/31060d7360c597e904b92619c9e53c738d227636/Figures/1656527620352-36e5461f-cb85-4406-ab54-29bef7334d5a.png)
 
 2. git clone fork后的repository到本地
 3. 进行本地修改，然后推送到远程库
 4. 进行 pull request -> New pull request -> create pull request
 
-![Screen Shot 2022-06-29 at 2.38.20 PM.png](https://cdn.nlark.com/yuque/0/2022/png/29007365/1656527923381-a77b9849-161f-47ef-9cdc-929ff0459f69.png#clientId=ubd14e5f7-062f-4&crop=0&crop=0&crop=1&crop=1&from=ui&id=u507aef96&margin=%5Bobject%20Object%5D&name=Screen%20Shot%202022-06-29%20at%202.38.20%20PM.png&originHeight=126&originWidth=1720&originalType=binary&ratio=1&rotation=0&showTitle=false&size=34865&status=done&style=none&taskId=ueb6e0902-6c76-4f37-afa5-6cb37718061&title=)
+![](https://github.com/LearnDataEveryday/Git-Github-Implementation-Note/blob/31060d7360c597e904b92619c9e53c738d227636/Figures/1656527923381-a77b9849-161f-47ef-9cdc-929ff0459f69.png)
 
 5. 另一边被fork的一方会收到pull request提示，审核代码 -> merge pull request 进行合并
 6. 将远程库内容拉取到本地库
